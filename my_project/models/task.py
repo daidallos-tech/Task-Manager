@@ -32,9 +32,21 @@ class TaskManager:
     def add_task(self, task_object):
         self.tasks.append(task_object)
         print(f"Your '{task_object.title}' task was successfully created and added to your list!")
+        print()
     
-    def show_tasks(self):
-        for idx, task in enumerate(self.tasks, 1):
+    def show_tasks(self, mode='all'):
+        if mode == 'done':
+            filtered_tasks = [task for task in self.tasks if task.status == 'done']
+        elif mode == 'in':
+            filtered_tasks = [task for task in self.tasks if task.status == 'in']
+        else:
+            filtered_tasks = self.tasks
+        
+        if not filtered_tasks:
+            print("You don't have any tasks")
+            return
+        
+        for idx, task in enumerate(filtered_tasks, 1):
             print(f"{idx}. {task.title} — {task.description} [{task.status}]")
     
     def delete_task(self, number: int):

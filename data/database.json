@@ -2,11 +2,31 @@
     {
         "title": "Coding",
         "description": "2 hours codding",
-        "status": "New"
+        "status": "in"
     },
     {
-        "title": "Wash dishes",
-        "description": "Wash all dishes",
-        "status": "Old"
+        "title": "1",
+        "description": "1",
+        "status": "in"
+    },
+    {
+        "title": "2",
+        "description": "2",
+        "status": "in"
+    },
+    {
+        "title": "3",
+        "description": "3",
+        "status": "in"
+    },
+    {
+        "title": "5",
+        "description": "5",
+        "status": "done"
+    },
+    {
+        "title": "Reading",
+        "description": "Read something in English",
+        "status": "in"
     }
 ]
