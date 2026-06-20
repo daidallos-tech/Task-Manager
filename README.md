@@ -2,9 +2,6 @@
 
 # 📝 Console Task Manager (CRUD)
 
-![Python Version](https://shields.io)
-![License](https://shields.io)
-
 ---
 
 ## 📺 Demo
