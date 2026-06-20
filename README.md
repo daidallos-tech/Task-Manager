@@ -4,11 +4,11 @@ This project approve that I understand CRUD structure. I create this structure u
 
 ## 📺 Demo
 
-## ![Альтернативный текст](assets/first.png)
+## ![TM screenshot](assets/first.png)
 
-## ![Альтернативный текст](assets/second.png)
+## ![TM screenshot](assets/second.png)
 
-## ![Альтернативный текст](assets/third.png)
+## ![TM screenshot](assets/third.png)
 
 ## ✨ Features
 
