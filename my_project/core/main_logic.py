@@ -5,17 +5,17 @@ manager = TaskManager()
 def main_logic():
     while True:
         print("=== TASK MANAGER ===")
-        user_input = input("Enter your choice\n1 - Create task\n2 - See task(s)\n3 - Delete task\n4 - Exit\nEnter: ")
+        user_input = input("Enter your choice\n1 - Create task\n2 - See task(s)\n3 - Delete task\n4 - Update task's status\n5 - Exit\nEnter: ")
 
         if user_input == "1":
             print()
             title_input = input("Enter a title of your task: ")
             description_input = input("Enter a description of your task: ")
-            status_input = input("Enter a status of your task: ")
+            #status_input = input("Enter a status of your task: ")
             print()
 
             try:
-                new_task = Task(title=title_input, description=description_input, status=status_input)
+                new_task = Task(title=title_input, description=description_input)
                 manager.add_task(new_task)
                 manager.save_task()
                 continue
@@ -52,8 +52,17 @@ def main_logic():
             except ValueError:
                 print("Your input has to be a number! Try again!")
             print()
-        
         elif user_input == "4":
+            print()
+            print("=== CURRENT TASKS ===")
+            try:
+                manager.show_tasks()
+                update_input = int(input("Enter a number of task you want to update: "))
+                manager.update_status(update_input)
+            except ValueError:
+                print("Your input has to be a number! Try again!")
+            print()
+        elif user_input == "5":
             print()
             print("Close app...")
             print()

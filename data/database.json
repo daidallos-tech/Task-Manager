@@ -2,31 +2,11 @@
     {
         "title": "Coding",
         "description": "2 hours codding",
-        "status": "in"
-    },
-    {
-        "title": "1",
-        "description": "1",
-        "status": "in"
-    },
-    {
-        "title": "2",
-        "description": "2",
-        "status": "in"
-    },
-    {
-        "title": "3",
-        "description": "3",
-        "status": "in"
-    },
-    {
-        "title": "5",
-        "description": "5",
         "status": "done"
     },
     {
-        "title": "Reading",
-        "description": "Read something in English",
+        "title": "Write",
+        "description": "Write something in Enlgihs",
         "status": "in"
     }
 ]

@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 class Task:
-    def __init__(self, title, description, status) -> None:
+    def __init__(self, title, description, status="in") -> None:
         if len(title) > 25:
             raise ValueError("Title of your task cannot be more than 25 symbols!")
         
@@ -33,6 +33,22 @@ class TaskManager:
         self.tasks.append(task_object)
         print(f"Your '{task_object.title}' task was successfully created and added to your list!")
         print()
+    
+    def update_status(self, number: int):
+        task_index = number - 1
+
+        if 0 <= task_index < len(self.tasks):
+            updated_task = self.tasks[task_index]
+
+            if updated_task.status == 'done':
+                print("Your status is already done!")
+                return
+
+            updated_task.status = 'done'
+            print(f"Status of task '{updated_task.title}' was updated !")
+            self.save_task()
+        else:
+            print("Incorrect number of task!Try again!")
     
     def show_tasks(self, mode='all'):
         if mode == 'done':
@@ -85,4 +101,3 @@ class TaskManager:
                 print(f"Error: {e}. Try again!")
         else:
             print("Database not found")
-        
