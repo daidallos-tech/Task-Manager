@@ -1,8 +1,6 @@
-# Task-Manager
+# Task-Manager 📝 (CRUD)
 
-# 📝 Console Task Manager (CRUD)
-
----
+This project approve that I understand CRUD structure. I create this structure use OOP for main logic and JSON for save logic.
 
 ## 📺 Demo
 
